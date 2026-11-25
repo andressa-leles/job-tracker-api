@@ -57,3 +57,22 @@ A aplicação utiliza três entidades principais relacionadas:
 1. **Crie o banco de dados no MySQL:**
    ```sql
    CREATE DATABASE job_tracker_db;
+   ```
+2. **Configure as credenciais:**
+   No arquivo `src/main/resources/application.properties`, ajuste o usuário e senha do seu MySQL:
+   ```properties
+   spring.datasource.url=jdbc:mysql://localhost:3306/job_tracker_db
+   spring.datasource.username=seu_usuario
+   spring.datasource.password=sua_senha
+   spring.jpa.hibernate.ddl-auto=update
+   ```
+3. **Execute a aplicação:**
+   Inicie a classe `DemoApplication.java` pela sua IDE (Eclipse / IntelliJ) ou via terminal com `./mvnw spring-boot:run`.
+4. A API estará disponível em `http://localhost:8080`.
+
+---
+
+## 👩‍💻 Autora
+
+Desenvolvido por **Andressa Leles**  
+[GitHub](https://github.com/andressa-leles)
